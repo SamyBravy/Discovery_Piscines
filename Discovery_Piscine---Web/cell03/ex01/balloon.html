@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html
+            {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            div
+            {
+                border-radius: 100%;
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+        </style>
+        <script>
+            var colors = ["red", "green", "blue"];
+            var i = 0;
+            var balloonWidth = 200;
+            var balloonHeight = 200;
+
+            function clickBalloon(balloon)
+            {
+                balloonWidth += 10;
+                balloonHeight += 10;
+                if (balloonWidth > 420)
+                {
+                    balloonWidth = 200;
+                    balloonHeight = 200;
+                }
+                balloon.style.width = balloonWidth + "px";
+                balloon.style.height = balloonHeight + "px";
+
+                i = (i + 1) % colors.length;
+                balloon.style.backgroundColor = colors[i];
+            }
+
+            function leaveBalloon(balloon)
+            {
+                balloonWidth -= 5;
+                balloonHeight -= 5;
+                if (balloonWidth < 200)
+                {
+                    balloonWidth = 200;
+                    balloonHeight = 200;
+                }
+                balloon.style.width = balloonWidth + "px";
+                balloon.style.height = balloonHeight + "px";
+
+                i = (i - 1 + colors.length) % colors.length;
+                balloon.style.backgroundColor = colors[i];
+            }
+        </script>
+    </head>
+    <body>
+        <div onclick="clickBalloon(this)" onmouseleave="leaveBalloon(this)"></div>
+    </body>
+</html>

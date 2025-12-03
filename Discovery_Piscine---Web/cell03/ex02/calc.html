@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input id="left"></input>
+        <select id="operator">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+            <option>%</option>
+        </select>
+        <input id="right"></input>
+        <button onclick="calc()">Try me!</button>
+    </body>
+    <script>
+        function useMe()
+        {
+            alert('Please, use me...');
+        }
+        setInterval(useMe, 30000);
+
+        function calc()
+        {
+            var res;
+            var left = parseFloat(document.getElementById("left").value);
+            var right = parseFloat(document.getElementById("right").value);
+            var operator = document.getElementById("operator").value;
+            
+            if (isNaN(left) || isNaN(right) || left < 0 || right < 0 || !Number.isInteger(left) || !Number.isInteger(right))
+            {
+                alert('Error :(');
+                return ;
+            }
+            if (right == 0 && (operator == '/' || operator == '%'))
+            {
+                console.log("It's over 9000!");
+                alert("It's over 9000!");
+                return ;
+            }
+
+            switch (operator)
+            {
+                case '+':
+                    res = left + right;
+                    break;
+                case '-':
+                    res = left - right;
+                    break;
+                case '*':
+                    res = left * right;
+                    break;
+                case '/':
+                    res = left / right;
+                    break;
+                case '%':
+                    res = left % right;
+            }
+            console.log(res);
+            alert(res);
+        }
+    </script>
+</html>

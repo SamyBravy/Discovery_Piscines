@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Sedgwick+Ave+Display&display=swap');
+
+body
+{
+    background-image: url('https://st.depositphotos.com/2228340/2414/i/450/depositphotos_24140635-stock-photo-seamless-starfield.jpg');
+}
+
+a
+{
+    text-decoration: none;
+}
+
+img
+{
+    width: 265px;
+    height: 300px;
+    box-shadow: 0px 8px 16px -15px rgb(68, 118, 255);
+}
+
+p
+{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+h2
+{
+    margin-top: 20px;
+    margin-bottom: 7px;
+    font-family: 'Charm', cursive;
+    font-size: 38px;
+}
+
+button
+{
+    width: 85%;
+    height: 40px;
+    background-color: rgb(33, 137, 255);
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+h3
+{
+    margin: auto;
+    font-size: 20px;
+    color: rgb(222, 236, 255);
+}
+
+.icon
+{
+    margin-top: 30px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.table-container
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.row
+{
+    display: table-row;
+}
+
+.cell
+{
+    display: table-cell;
+    padding: 1px;
+}
+
+.table
+{
+    display: table;
+    width: 23%;
+    border: 1px solid rgb(0, 44, 165);
+    box-shadow: 3px 1px 16px 10px rgb(121, 156, 255);
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+}

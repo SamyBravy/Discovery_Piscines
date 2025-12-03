@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Sedgwick+Ave+Display&display=swap');
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    background-image: url('https://www.coccoledigusto.com/cdn/shop/files/prosciuttocottoveganovegfather.png?v=1693048558&width=480');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-color: #00aeff;
+}
+
+h1
+{
+    font-family: 'Charm', cursive;
+    font-size: 38px;
+}
+
+p
+{
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #89daff;
+}
+
+button
+{
+    background-color: #89daff;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.centered
+{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.dropdown
+{
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #00aeff;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(56, 153, 0, 0.2);
+}
+
+.dropdown-content a
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover
+{
+    background-color: #89daff;
+}

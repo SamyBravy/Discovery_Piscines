@@ -1,0 +1,280 @@
+body, html
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body
+{
+    height: auto;
+}
+
+p
+{
+    margin: 0;
+}
+
+#container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#side_bar
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 64px;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 100vh;
+    background-color: wheat;
+    position: fixed;
+    top: 0px;
+    left: 0;
+}
+
+#home_button
+{
+    margin-top: auto;
+}
+
+#main_content
+{
+    width: 100%;
+    height: 100vh;
+    margin-left: 80px;
+}
+
+/*
+Una prima parte : che visualizzerà un contenuto semplice con 
+una foto, un nome e un titolo di lavoro.
+*/
+#work_title
+{
+    height: fit-content;
+}
+
+#myself
+{
+    padding: 5%;
+    display: flex;
+    background-color: aquamarine;
+}
+
+#myself #photo
+{
+    width: 20%;
+}
+
+#myself p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    text-align: center;
+}
+
+#myself br
+{
+    margin-bottom: 5px;
+}
+
+#unifi_div
+{
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: gold;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#unifi_div .logo
+{
+    width: 20%;
+}
+
+#unifi_div p
+{
+    height: fit-content;
+    width: 50%;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 8px;
+    margin-left: 5%;
+}
+
+#unifi_div .icon
+{
+    margin-left: 32px;
+}
+
+#div_42
+{
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: beige;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#div_42 .icon
+{
+    margin-right: 32px;
+}
+
+#div_42 p
+{
+    height: fit-content;
+    width: 50%;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 8px;
+    margin-right: 5%;
+}
+
+#div_42 .logo
+{
+    width: 20%;
+}
+
+/*
+Una seconda parte : che visualizzerà le esperienze professionali
+e le competenze della persona.
+*/
+#experiences
+{
+    height: fit-content;
+}
+
+#discovery_piscine
+{
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: cornflowerblue;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#discovery_piscine .logo
+{
+    width: 20%;
+}
+
+#discovery_piscine p
+{
+    height: fit-content;
+    width: 50%;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 8px;
+    margin-left: 5%;
+}
+
+#discovery_piscine .icon
+{
+    margin-left: 32px;
+}
+
+#volontariato
+{
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: greenyellow;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#volontariato .icon
+{
+    margin-right: 32px;
+}
+
+#volontariato p
+{
+    height: fit-content;
+    width: 50%;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 8px;
+    margin-right: 5%;
+}
+
+#volontariato .logo
+{
+    width: 20%;
+}
+
+#giapponese
+{
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: white;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#giapponese .logo
+{
+    width: 20%;
+}
+
+#giapponese p
+{
+    height: fit-content;
+    width: 50%;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 8px;
+    margin-left: 5%;
+}
+
+#giapponese .icon
+{
+    margin-left: 32px;
+}
+
+/*
+Una parte finale : con dei link per contattare la persona.
+*/
+#footer
+{
+    background-color: black;
+    min-height: 20vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer a
+{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#footer p
+{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+}

@@ -1,0 +1,42 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+  
+.immagine
+{
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+  
+h2
+{
+    text-align: center;
+    line-height: 100vh;
+    color: black;
+    font-size: 30px;
+}
+
+.testo
+{
+    background-color: black;
+    color: white;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+  
+.triste
+{
+    background-image: url('https://www.quotidianopiemontese.it/wp-content/uploads/2021/03/pokemon-pikachu-triste.jpg');
+}
+
+.felice
+{
+    background-image: url('https://www.pokemon.com/static-assets/content-assets/cms2/img/watch-pokemon-tv/seasons/season18/season18_ep40_ss01.jpg');
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Sedgwick+Ave+Display&display=swap');
+            body
+            {
+                background-color: rgb(51, 100, 235);
+            }
+            h1
+            {
+                font-family: 'Charm', cursive;
+                text-align: center;
+                font-size: 50px;
+                color: white;
+            }
+            button
+            {
+                background-color: rgb(62, 194, 255);
+                color: rgb(243, 252, 255);
+                font-weight: bold;
+                display:flex;
+                margin: auto;
+                margin-top: 32px;
+                width: 90px;
+                height: 40px;
+                font-size: 20px;
+                align-items: center;
+                justify-content: center;
+            }
+            #ft_list
+            {
+                margin: auto;
+                margin-top: 45px;
+                height: auto;
+                width: 40%;
+                min-height: 50px;
+                max-height: 70vh;
+                overflow: auto;
+                border: 1px solid rgb(0, 44, 165);
+                box-shadow: 3px 1px 16px 10px rgb(121, 156, 255);
+                background-color: rgb(160, 185, 255);
+            }
+        </style>
+        <script src="todo.js"></script>
+    </head>
+    <body>
+        <h1>Todo List</h1>
+        <button onclick="newElement()">New</button>
+        <div id="ft_list"></div>
+    </body>
+</html>
